@@ -108,7 +108,8 @@ ggsurvplot_facet_fix <- function (fit, data, facet.by, color = NULL, palette = N
       legend.labs <- gsub(";", ",", strata.levels)
     .survformula <- .build_formula(surv.obj, ".strata.")
   }
-  #####################calling the xxx_fix function########################
+  ################# calling the ggsurvplot_fix function in this file  ####################
+  #################    instead of ggsurvplot function in survminer    ####################
   ggsurv <- ggsurvplot_core_fix(fit, data = data, color = color, 
                                 palette = palette, legend.labs = legend.labs, ...)
   p <- .facet(ggsurv$plot, facet.by, nrow = nrow, ncol = ncol, 
@@ -141,6 +142,8 @@ ggsurvplot_facet_fix <- function (fit, data, facet.by, color = NULL, palette = N
 # Core function to plot survival curves using ggplot2.
 # Accepts only one survfit object. Internally called by the other \code{ggsurvplot_*()} family functions.
 # The documentation of arguments are described at ?ggsurvplot
+################# calling the ggsurvplot_core_fix function in this file  ####################
+#################    instead of ggsurvplot_core function in survminer    ####################
 ggsurvplot_core_fix <- function(fit, data = NULL, fun = NULL,
                                 color = NULL, palette = NULL, linetype = 1,
                                 break.x.by = NULL, break.y.by = NULL,  break.time.by = NULL,
@@ -228,7 +231,8 @@ ggsurvplot_core_fix <- function(fit, data = NULL, fun = NULL,
   
   # Main survival curves
   #::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-  #####################calling the xxx_fix function########################
+  ################# calling the ggsurvplot_df_fix function in this file  ####################
+  #################    instead of ggsurvplot_df function in survminer    ####################
   p <- ggsurvplot_df_fix(d, fun = fun,
                          color = color, palette = palette, linetype = linetype,
                          break.x.by = break.x.by, break.time.by = break.time.by, break.y.by = break.y.by,
@@ -623,6 +627,8 @@ ggsurvplot_core_fix <- function(fit, data = NULL, fun = NULL,
   res
 }
 
+  ################# calling the ggsurvplot_df_fix function in this file  ####################
+  #################    instead of ggsurvplot_df function in survminer    ####################
 ggsurvplot_df_fix <- function (fit, fun = NULL, color = NULL, palette = NULL, linetype = 1, 
                                break.x.by = NULL, break.time.by = NULL, break.y.by = NULL, 
                                surv.scale = c("default", "percent"), surv.geom = geom_step, 
@@ -678,7 +684,8 @@ ggsurvplot_df_fix <- function (fit, fun = NULL, color = NULL, palette = NULL, li
   if (is.null(legend.title)) 
     legend.title <- .strata.var
   if (!.is_cloglog(fun)) 
-    #####################calling the xxx_fix function########################
+  ################# calling the .connect2origin_fix function in this file  ####################
+  #################    instead of .connect2origin function in survminer    ####################
   df <- .connect2origin_fix(df) 
   df <- .apply_surv_func(df, fun = fun)
   surv.scale <- match.arg(surv.scale)
@@ -803,6 +810,7 @@ ggsurvplot_df_fix <- function (fit, fun = NULL, color = NULL, palette = NULL, li
 
 # Connect survival data to the origine
 #::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+######################## the real fixed function ########################
 .connect2origin_fix <- function(d, fit, data = NULL){
   
   base <- d[1, , drop = FALSE]
