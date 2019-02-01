@@ -1,3 +1,7 @@
+Actually, the main survminer package's author had just merged my fix pull request.
+[https://github.com/kassambara/survminer/pull/363 ](url)
+You could install the latest developmental version from CRAN.
+
 ```{r}
 # survminer-fix
 # download the file "ggsurvplot_facet_fix_12072018.R" 
