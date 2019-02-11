@@ -34,4 +34,5 @@ ggsurvplot_facet_risktable(fit, data)
 ![Image of Yaktocat](https://raw.githubusercontent.com/BingxinS/survminer-fix/master/issue-fig/ggsurvplot_facet_risktable_example2.png)
 
 
-
+### Issue
+https://github.com/kassambara/survminer/issues/370 
