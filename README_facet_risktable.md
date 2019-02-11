@@ -33,11 +33,5 @@ ggsurvplot_facet_risktable(fit, data)
 ```
 ![Image of Yaktocat](https://raw.githubusercontent.com/BingxinS/survminer-fix/master/issue-fig/ggsurvplot_facet_risktable_example2.png)
 
-### Explaination of the workaround function
-
-```{r LoadPackages}
-library(survminer)
-require("survival")
-```
 
 
