@@ -14,6 +14,7 @@
 #' fit <- survfit(Surv(time, status) ~  sex + ph.ecog + ph.karno, data)
 #' ggsurvplot_facet_risktable(fit, data)
 #'#::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#' https://github.com/BingxinS/survminer-fix/blob/master/README_facet_risktable.md
 
 
 # use the fixed faceted plot along this workaround function, or use the most recent experimental version of survminer
