@@ -7,7 +7,7 @@
 #' source("https://raw.githubusercontent.com/BingxinS/survminer-fix/master/ggsurvplot_facet.risktable.R")
 #'#::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 #' data <- lung
-#' fit <- survfit(Surv(time, status) ~ sex + ph.karno, data)
+#' fit <- survfit(Surv(time, status) ~ sex + ph.ecog, data)
 #' ggsurvplot_facet_risktable(fit, data, risktable.ylab="Number at Risk")
 #'#::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 #' data <- lung
