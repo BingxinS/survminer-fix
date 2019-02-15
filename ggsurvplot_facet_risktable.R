@@ -4,7 +4,7 @@
 #' @examples
 #' library(survminer)
 #' require("survival")
-#' source("https://raw.githubusercontent.com/BingxinS/survminer-fix/master/ggsurvplot_facet.risktable.R")
+#' source("https://raw.githubusercontent.com/BingxinS/survminer-fix/master/ggsurvplot_facet_risktable.R")
 #'#::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 #' data <- lung
 #' fit <- survfit(Surv(time, status) ~ sex + ph.ecog, data)
