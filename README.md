@@ -1,6 +1,21 @@
+This file contains the fix for the issue of facetted plots not connected to the origin, i.e. missing the first interval.
+
+#### update on 02/01/2019
 Actually, the main survminer package's author had just merged my fix pull request.
 [https://github.com/kassambara/survminer/pull/363 ](url)
 You could install the latest developmental version from CRAN.
+
+#### update on 02/21/2019
+A work around function available for combining the fixed facet plots, risk tables, and confidence intervals.
+[https://github.com/kassambara/survminer/issues/371 ](url)
+
+Function available at:
+[https://github.com/BingxinS/survminer-fix/blob/master/ggsurvplot_facet_table_confint.R ](url)
+
+Examples can be found here:
+[https://github.com/BingxinS/survminer-fix/blob/master/README_facet_table_confint.md ](url)
+
+#### Original README file
 
 ```{r}
 # survminer-fix
