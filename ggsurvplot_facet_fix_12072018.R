@@ -834,6 +834,7 @@ ggsurvplot_df_fix <- function (fit, fun = NULL, color = NULL, palette = NULL, li
       for (indRow in c(1:n.strata)) {
         tmpStrata = as.list(strsplit(strata[indRow], '\\,'))[[1]]
         tmpFacet  = gsub(".*=", "", tmpStrata)
+        tmpFacet  = gsub(" ", "", tmpFacet, fixed = TRUE)
         base[indRow, c((indStrata+1):indMax)] = tmpFacet
       }
     }
